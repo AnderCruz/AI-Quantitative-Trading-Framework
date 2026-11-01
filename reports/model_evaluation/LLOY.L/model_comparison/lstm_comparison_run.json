@@ -1,0 +1,47 @@
+{
+  "ticker": "LLOY.L",
+  "reference_predictions_file": "reports/model_evaluation/LLOY.L/lightgbm_regression/all_models_including_mlp_aligned_predictions.csv",
+  "lstm_predictions_file": "reports/model_evaluation/LLOY.L/lstm_regression/lstm_validation_predictions.csv",
+  "models_in_reference": [
+    "historical_mean",
+    "historical_median",
+    "lightgbm_regression",
+    "mlp_regression",
+    "ridge_regression",
+    "zero_return"
+  ],
+  "models_in_combined_comparison": [
+    "historical_mean",
+    "historical_median",
+    "lightgbm_regression",
+    "lstm_regression",
+    "mlp_regression",
+    "ridge_regression",
+    "zero_return"
+  ],
+  "common_date_horizon_observations": 1505,
+  "combined_prediction_rows": 10535,
+  "horizons": [
+    1,
+    5,
+    10
+  ],
+  "hac_lags_by_horizon": {
+    "1": 5,
+    "5": 4,
+    "10": 9
+  },
+  "directional_tests_exclude_zero_return_baseline": true,
+  "paired_directional_tests_use_common_nonzero_forecasts": true,
+  "directional_accuracy_definition": "Conditional on non-zero predicted direction; sign equality against realised return.",
+  "directional_coverage_definition": "Fraction of forecasts with a non-zero predicted direction.",
+  "bootstrap_block_lengths_by_horizon": {
+    "1": 5,
+    "5": 5,
+    "10": 10
+  },
+  "bootstrap_replicates": 2000,
+  "holm_correction_applied": true,
+  "final_test_data_used": false,
+  "backtesting_performed": false
+}
