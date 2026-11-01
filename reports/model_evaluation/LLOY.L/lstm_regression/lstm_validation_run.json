@@ -1,0 +1,33 @@
+{
+  "ticker": "LLOY.L",
+  "model": "lstm_regression",
+  "development_start": "2016-10-24",
+  "development_end": "2023-10-20",
+  "validation_start": "2023-10-23",
+  "validation_end": "2025-10-22",
+  "latest_input_session": "2025-10-22",
+  "final_test_data_used": false,
+  "backtesting_performed": false,
+  "horizons": [
+    1,
+    5,
+    10
+  ],
+  "minimum_training_samples": 500,
+  "model_parameters": {
+    "input_size": 7,
+    "hidden_size": 32,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "sequence_length": 20,
+    "random_state": 42,
+    "learning_rate": 0.001,
+    "epochs": 20,
+    "batch_size": 32
+  },
+  "prediction_counts_by_horizon": {
+    "1": 506,
+    "5": 502,
+    "10": 497
+  }
+}
